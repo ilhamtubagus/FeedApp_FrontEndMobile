@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FeedApp</string>
+    <string name="login">Login</string>
+
+    <string name="dont_have_account">Don\'t have an account ? Sign Up</string>
+    <string name="have_account">Have an account ? Login</string>
+
+    <!-- Bottom Nav -->
+    <string name="feed">Feed</string>
+    <string name="newFeed">New Feed</string>
+    <string name="more">More</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="search">I want to search &#8230;</string>
+</resources>

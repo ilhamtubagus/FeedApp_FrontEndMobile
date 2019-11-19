@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AuthActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="28dp"
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            app:met_floatingLabel="highlight"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Name"
+            app:met_floatingLabel="highlight"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:met_floatingLabel="highlight"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            app:met_floatingLabel="highlight"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/pb_signUp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="-2dp"
+            android:indeterminate="true"
+            android:scaleY="4"
+            android:visibility="invisible"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_account"
+        />
+
+</LinearLayout>
